@@ -97,6 +97,7 @@
     main nav ul li a {
         text-decoration: none;
         color: black;
+        font-size: 20px;
     }
 
     main nav .button {
@@ -126,9 +127,9 @@
     main .text {
         padding-top: 40px;
         height: 400px;
-        width: 40%;
+        width: 80%;
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
     }
 
@@ -137,4 +138,36 @@
         font-family: 'AnandaBlack';
         text-align: center;
         line-height: 100px;
+        color: rgb(34, 99, 219);
+        -webkit-text-stroke: 0.5px;
+        -webkit-text-stroke-color: rgb(230, 222, 222);
+    }
+
+    .section-history {
+        margin: 0 auto;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .history {
+        padding-top: 20px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .history h3 {
+        margin-bottom: 40px;
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(24, 224, 34);
+    }
+
+    .history p {
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 25px;
     }
