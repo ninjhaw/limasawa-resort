@@ -7,167 +7,181 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    list-style-type: none;
+    /* list-style-type: none; */
+}
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
 }
 
 
+div.container {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+
+.top-details {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-details .left, header .right {
+    width: 50%;
+}
+
+.top-details .left {
+    display: flex;
+    justify-content: center;
+}
+
+.top-details .left div {
+    margin: 0 50px 0 0;
+}
+
+.top-details .right ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    padding-right: 120px;
+}
+
+.top-details .right ul li {
+    margin-right: 15px;
+}
+
+.top-details .right ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.top-details .right ul li a i {
+    font-size: 17px;
+}
+
+.top-details .left .header-details {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* HEADER */
-    header {
-        width: 100%;
-        height: 50px;
-        display: flex;
-    }
+header {
+    padding: 0 90px;
+    display: flex;
+    justify-content: space-around;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky; /* For other browsers */
+    top: 0;
+    background-color: white;
+    box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.5);
+}
 
+header > .image {
+    padding-top: 5px;
+}
+header > nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
 
+header > nav > ul > li {
+    list-style-type: none;
+    margin-right: 50px;
+    font-family: Quicksand;
+    font-weight: 500;
+}
 
-    header .left, header .right {
-        width: 50%;
-        padding-top: 14px;
-    }
+header > nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
 
-    header .left {
-        display: flex;
-        justify-content: center;
-    }
-
-    header .left div {
-        margin: 0 50px 0 0;
-    }
-
-    header .right ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: end;
-        padding-right: 120px;
-    }
-
-    header .right ul li {
-        margin-right: 15px;
-    }
-
-    header .right ul li i {
-        font-size: 17px;
-    }
-
-    header .left .header-details {
-        font-family: Arial, Helvetica, sans-serif;
-    }
+header > nav > ul > li > a:hover {
+    color: brown;
+}
 
 /* MAIN */
-    main {
-        width: 100%;
-        height: 92vh;
-        position: relative;
-    }
 
-    main .background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: url('images/limasawa_bg.jpg')no-repeat;
-        background-size: cover;
-        opacity: 0.5;
-        z-index: -1;
-    }
-    
-    main nav {
-        padding-top: 26px;
-        display: flex;
-        justify-content: space-around;
-    }
+main > #banner-container {
+    width: 100%;
+    height: 100vh;
+}
 
-    main nav .logo h4 {
-        font-family: cursive;
-        font-size: 20px;
-    }
-    
-    main nav ul {
-        padding-left: 60px;
-        display: flex;
-        padding-top: 9px;
-    }
-    
-    main nav ul li{
-        margin-right: 60px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+main > #banner-container > .banner {
+    background: url('./images/limasawa_peak.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 
-    main nav ul li a {
-        text-decoration: none;
-        color: black;
-        font-size: 20px;
-    }
+}
 
-    main nav .button {
-        padding-top: 9px;
-    }
+main > #history {
+    margin-bottom: 100px;
+}
 
-    main nav .button a {
-        text-decoration: none;
-        background-color: rgb(227, 241, 21);
-        padding: 10px;
-        border-radius: 3px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-    }
+main > #history > .history-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 90px;
+}
 
-    main nav .button a i {
-        color: black;
-    }
+main > #history > .history-container > .info > p {
+    text-align: justify;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
 
-    main .mid-content {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        justify-content: center;
-    }
+main > #history > .history-container > .off-list {
+    padding-left: 50px;
+}
 
-    main .text {
-        padding-top: 40px;
-        height: 400px;
-        width: 80%;
-        display: flex;
-        justify-content: end;
-        align-items: center;
-    }
+main > #history > .history-container > .off-list > li {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+}
 
-    main .mid-content .text ul li{
-        font-size: 70px;
-        font-family: 'AnandaBlack';
-        text-align: center;
-        line-height: 100px;
-        color: rgb(34, 99, 219);
-        -webkit-text-stroke: 0.5px;
-        -webkit-text-stroke-color: rgb(230, 222, 222);
-    }
+main > #resorts {
+    padding: 20px 90px;
+}
 
-    .section-history {
-        margin: 0 auto;
-        width: 100%;
-        height: 400px;
-        display: flex;
-        justify-content: center;
-    }
+main > #resorts > .resort-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
 
-    .history {
-        padding-top: 20px;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+main > #resorts > .resort-container > .resort-card {
+    width: 70%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px 10px 10px;
+    gap: 20px;
+}
 
-    .history h3 {
-        margin-bottom: 40px;
-        font-size: 50px;
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(24, 224, 34);
-    }
+main > #resorts > .resort-container > .resort-card > h3 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 30px;
+}
 
-    .history p {
-        text-align: justify;
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 25px;
-    }
+main > #resorts > .resort-container > .resort-card > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+
