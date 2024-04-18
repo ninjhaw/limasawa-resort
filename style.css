@@ -130,11 +130,56 @@ main > #banner-container > .banner {
     background-size: cover;
     width: 100%;
     height: 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 
+main > #banner-container > .banner > .highlight-content {
+    padding: 0 50px 0 0;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+
+main > #banner-container > .banner > .highlight-content > h1 {
+    font-family: 'AnandaBlack';
+    font-size: 70px;
+    text-shadow: 1px 1px 2px pink;
+}
+
+main > #banner-container > .banner > .highlight-content > p {
+    font-family: Quicksand;
+    font-size: 22px;
+    margin: 0 0 30px 0;
+}
+
+main > #banner-container > .banner > .highlight-content > a {
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-family: Quicksand;
+    font-weight: 500;
+    transition: background-color 0.4s ease;
+}
+
+main > #banner-container > .banner > .highlight-content > a:hover {
+    color: white;
+    background-color: black;
 }
 
 main > #history {
+    padding: 50px 0 0 0;
     margin-bottom: 100px;
+    scroll-behavior: smooth;
 }
 
 main > #history > .history-container {
@@ -159,7 +204,8 @@ main > #history > .history-container > .off-list > li {
 }
 
 main > #resorts {
-    padding: 20px 90px;
+    padding: 50px 90px;
+    scroll-behavior: smooth;
 }
 
 main > #resorts > .resort-container {
@@ -190,4 +236,57 @@ main > #resorts > .resort-container > .resort-card > p {
     font-size: 15px;
 }
 
+main > #tourist {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px 90px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
+main > #tourist > .spots-card:nth-child(odd) {
+    display: flex;
+    justify-content: start;
+}
+
+main > #tourist > .spots-card:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+main > #tourist > .spots-card > .spot-description {
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+main > #tourist > .spots-card > .spot-description > h3 {
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main > #tourist > .spots-card > .spot-description > p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    text-indent: 60px;
+    text-align: justify;
+}
+
+main > #events {
+    padding: 50px 90px;
+}
+
+main > #events > .events-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main > #events > .events-card {
+    width: 50%;
+    height: 50%;
+}
