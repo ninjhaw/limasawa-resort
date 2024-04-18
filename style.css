@@ -32,7 +32,8 @@ header {
 
 
 .top-details {
-    height: 50px;
+    padding: 15px;
+    height: 17px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,6 +50,10 @@ header {
 
 .top-details .left div {
     margin: 0 50px 0 0;
+}
+
+.top-details .left div i {
+    font-size: 11px;
 }
 
 .top-details .right ul {
@@ -68,10 +73,11 @@ header {
 }
 
 .top-details .right ul li a i {
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .top-details .left .header-details {
+    font-size: 11px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -139,7 +145,7 @@ main > #history > .history-container {
 
 main > #history > .history-container > .info > p {
     text-align: justify;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
 }
 
