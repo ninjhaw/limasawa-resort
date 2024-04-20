@@ -1,0 +1,10 @@
+.container {
+    width: 70%;
+    height: 100vh;
+    padding: 5px 0 20px 30px;
+}
+
+.container > * {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+}
