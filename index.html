@@ -4,48 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Limasawa</title>
+    <title>Limasawa Island</title>
 
     <link rel="icon" href="https://cdn.iconscout.com/icon/premium/png-512-thumb/island-4996468-4153502.png?f=webp&w=512">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=BioRhyme:wght@300&family=Dhurjati&family=Montserrat:wght@300&family=Phudu:wght@500&family=Poppins:wght@200;400&family=Quicksand:wght@300..700&family=Rubik+Iso&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8f07a2ba1f.js" crossorigin="anonymous" defer></script>
-    <script src="./index.js" defer></script>
+    <script src="./animation/index.js" defer></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="top-details">
-            <div class="left">
-                <div>
-                    <i class="fa-sharp fa-solid fa-location-dot"></i> 
-                    <span class="header-details">Limasawa, Southern Leyte</span>
-                </div>
-                <div>
-                    <i class="fa-regular fa-envelope"></i> 
-                    <span class="header-details">joshuaehd.silvio.37@gmail.com</span>
-                </div>
-            </div>
-            <div class="right">
-                <ul>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-square-whatsapp"></i></a></li>
-                </ul>
-            </div>
-        </div>
+        <div class="white"></div>
         <header>
             <div class="image">
                 <a href="#"><img src="./images/logo.png" alt="" width="40" height="40"></a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="#history">History</a></li>
                     <li><a href="#resorts">Resorts</a></li>
                     <li><a href="#tourist">Tourists Spots</a></li>
@@ -60,9 +39,9 @@
                     <div class="highlight-content">
                         <h1>Welcome to Limasawa</h1>
                         <p>-"Let nature be your therapist."</p>
-                        <a href="#">
-                            <i class="fa-solid fa-phone"></i>
-                            Book now
+                        <a href="./pages/reservation.html" target="_blank">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span style="margin-left: 9px;">Make a reservation</span>
                         </a>
                     </div>
                 </div>
@@ -233,18 +212,74 @@
                 <h2>Events</h2>
                 <div class="events-container">
                     <div class="events-card">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100078389072609%2Fvideos%2F3847608595485349%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        <div>
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fpsc.visayas%2Fvideos%2F268226632164050%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <div class="event-description">
+                            <h4>Limasawa Bancarera</h4>
+                            <p>
+                                A racing contest of motorized small boats manned by a single racer in an oval-shaped track race about a hundred meters away from the coastline
+                                during First Mass of the Philippines Anniversary.
+                            </p><br>
+                            <span>Credits to Visayas Sports Facebook page.</span>
+                        </div>
                     </div>
                     <div class="events-card">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FDiscoverLimasawaIslandPh%2Fvideos%2F1588224771933658%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        <div>
+                            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FDiscoverLimasawaIslandPh%2Fvideos%2F445257954695227%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                        </div>
+                        <div class="event-description">
+                            <h4>Sinugdan Festival</h4>
+                            <p>
+                                As the primary highlight of the Sinugdan Festival organized by the local government, this annual event commemorates the first Catholic mass that took place in 1521.
+                                It holds historical and religious significance not only in the island of Limasawa but in the entire country for it marks the start of Christianization in the Philippines.
+                                March 31st is a special working holiday in Southern Leyte by virtue of Republic Act No. 11373 that was signed on August 22, 2019.
+                            </p><br>
+                            <span>Credits to Discover Limasawa Island Facebook page.</span>
+                        </div>
                     </div>
-                </div>
-
                 </div>
             </section>
         </main>
 
-        <footer></footer>
+        <footer>
+            <section class="upper">
+                <div class="upper-left-footer">
+                    <a href="/pages/guide.html" target="_blank">All you need to know before going here.</a>
+                    <h5>Limasawa, Southern Leyte</h5>
+                    <p>Philippines, 6618</p>
+                </div>
+                <div class="upper-mid-footer">
+                    <p>
+                        <i style="margin-right: 10px;" class="fa-brands fa-facebook"></i>
+                        Discover Limasawa Island
+                    </p>
+                    <p>
+                        <i style="margin-right: 10px;" class="fa-brands fa-square-instagram"></i>
+                        Discover Limasawa Island
+                    </p>
+                    <p>
+                        <i style="margin-right: 10px;" class="fa-solid fa-phone"></i>
+                        +639946230291
+                    </p>
+                    <p>
+                        <i style="margin-right: 10px;" class="fa-solid fa-envelope"></i>
+                        limasawatravelandtours@gmail.com
+                    </p>
+                </div>
+                <div class="upper-right-footer">
+                    <a href="./pages/reservation.html" target="_blank">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Make a reservation
+                    </a>
+                </div>
+            </section>
+            <section class="lower">
+                <div>
+                    <p>&copy; 2024 Limasawa Island</p>
+                </div>
+            </section>
+        </footer>
     </div>
 </body>
 </html>

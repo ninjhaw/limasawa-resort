@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Reservation</title>
+
+    <link rel="icon" href="https://cdn.iconscout.com/icon/premium/png-512-thumb/island-4996468-4153502.png?f=webp&w=512">
+    <link rel="stylesheet" href="../css/reservation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=BioRhyme:wght@300&family=Dhurjati&family=Montserrat:wght@300&family=Phudu:wght@500&family=Poppins:wght@200;400&family=Quicksand:wght@300..700&family=Rubik+Iso&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="form-container">
+        <h2>Make a reservation</h2>
+        <div>
+            <form action="#">
+                <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                <input type="text" name="last-name" id="last-name" placeholder="Last Name"><br>
+                <input type="email" id="email" placeholder="username@mail.com"><br>
+                <input type="text" id="address" placeholder="Address: State, Province, Zip">
+                <input type="tel" id="tel" placeholder="09946234232"><br>
+                <input type="number" id="adults" placeholder="Number of Adults">
+                <input type="number" id="children" placeholder="Number of Children"><br>
+                <label for="check-in">Check-in Date</label>
+                <input type="date" name="check-in" id="check-in" placeholder="Check-in Date">
+                <label for="check-out">Check-out Date</label>
+                <input type="date" name="check-out" id="check-out" placeholder="Check-out Date">
+                <label for="cars">Choose a resort:</label><br>
+                <select id="resorts" name="resorts">
+                    <option value="Dakdak Beach Resort">Dakdak Beach Resort</option>
+                    <option value="Island Lagooon">Island Lagooon</option>
+                    <option value="Evashore Beach Resort">Evashore Beach Resort</option>
+                    <option value="Amy Beach Resort">Amy Beach Resort</option>
+                    <option value="Avicennia Beach Front">Avicennia Beach Front</option>
+                    <option value="Talisay Beach Front">Talisay Beach Front</option>
+                    <option value="Genezareth Beach Front">Genezareth Beach Front</option>
+                    <option value="South Parola Beach Front">South Parola Beach Front</option>
+                </select>
+                <input type="submit" id="submit" value="Reserve">
+                <input type="reset" id="reset">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

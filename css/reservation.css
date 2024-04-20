@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/limasawa_peak.jpg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+}
+
+
+.form-container {
+    padding: 20px 0 30px 0;
+    width: 40%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-color: rgb(233, 223, 223);
+}
+
+.form-container > h2 {
+    margin-bottom: 20px;
+    font-family: Quicksand;
+    font-weight: 600;
+}
+
+.form-container > div {
+    width: 75%;
+    padding-bottom: 20px;
+}
+
+.form-container > div > form > input {
+    margin-bottom: 10px;
+    width: 365px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-container > div > form > #first-name,
+.form-container > div > form > #last-name {
+    margin-bottom: 10px;
+    width: 180px;
+    border: 1px solid gray;
+}
+
+.form-container > div > form > #adults,
+.form-container > div > form > #children {
+    width: 180px;
+}
+
+.form-container > div > form > label {
+    color: rgb(47, 46, 46);
+    font-family: Quicksand;
+    font-size: 12px;
+}
+
+.form-container > div > form > select {
+    margin-bottom: 10px;
+    font-family: Quicksand;
+    width: 200px;
+    height: 30px;
+
+}
+
+.form-container > div > form > select > option {
+    font-family: Quicksand;
+}
+
+.form-container > div > form > #submit,
+.form-container > div > form > #reset {
+    width: 48%;
+    border: none;
+    font-family: Quicksand;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-container > div > form > #submit:hover,
+.form-container > div > form > #reset:hover {
+    opacity: 0.8;
+}
+
+.form-container > div > form > #submit {
+    background-color: rgb(4, 226, 4);
+}
+
+.form-container > div > form > #reset {
+    background-color: rgb(237, 90, 90);
+}

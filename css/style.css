@@ -1,6 +1,6 @@
 @font-face {
     font-family: AnandaBlack;
-    src: url(fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
+    src: url(../fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
 }
 
 * {
@@ -24,6 +24,11 @@ div.container {
     flex-direction: column;
 }
 
+.white {
+    width: 100%;
+    height: 10px;
+}
+
 header {
     width: 100%;
     height: 50px;
@@ -31,55 +36,6 @@ header {
 }
 
 
-.top-details {
-    padding: 15px;
-    height: 17px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.top-details .left, header .right {
-    width: 50%;
-}
-
-.top-details .left {
-    display: flex;
-    justify-content: center;
-}
-
-.top-details .left div {
-    margin: 0 50px 0 0;
-}
-
-.top-details .left div i {
-    font-size: 11px;
-}
-
-.top-details .right ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: end;
-    padding-right: 120px;
-}
-
-.top-details .right ul li {
-    margin-right: 15px;
-}
-
-.top-details .right ul li a{
-    text-decoration: none;
-    color: black;
-}
-
-.top-details .right ul li a i {
-    font-size: 14px;
-}
-
-.top-details .left .header-details {
-    font-size: 11px;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 /* HEADER */
 header {
@@ -126,7 +82,7 @@ main > #banner-container {
 }
 
 main > #banner-container > .banner {
-    background: url('./images/limasawa_peak.jpg') no-repeat;
+    background: url('../images/limasawa_peak.jpg') no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -180,6 +136,8 @@ main > #history {
     padding: 50px 0 0 0;
     margin-bottom: 100px;
     scroll-behavior: smooth;
+    /* background-color: rgb(243, 243, 243); */
+    box-shadow: 0 0 10px #b6b4b4;
 }
 
 main > #history > .history-container {
@@ -243,6 +201,7 @@ main > #tourist {
     padding: 50px 90px;
     gap: 20px;
     flex-wrap: wrap;
+    box-shadow: 0 0 10px #b1b0b0;
 }
 
 main > #tourist > .spots-card:nth-child(odd) {
@@ -253,6 +212,11 @@ main > #tourist > .spots-card:nth-child(odd) {
 main > #tourist > .spots-card:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
+}
+
+main > #tourist > .spots-card > .spot-image {
+    height: 350px;
+    box-shadow: 0 15px 16px 0 rgba(0,0,0,0.2), 0 9px 20px 0 rgba(0,0,0,0.19) !important;
 }
 
 main > #tourist > .spots-card > .spot-description {
@@ -277,16 +241,113 @@ main > #tourist > .spots-card > .spot-description > p {
 
 main > #events {
     padding: 50px 90px;
+    margin-bottom: 60px;
 }
 
 main > #events > .events-container {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
-main > #events > .events-card {
-    width: 50%;
+main > #events > .events-container > .events-card {
+    width: 100%;
     height: 50%;
+    display: flex;
+}
+
+main > #events > .events-container > .events-card > .event-description {
+    padding: 30px 50px 20px 30px;
+    width: 100%;
+}
+
+main > #events > .events-container > .events-card > .event-description h4 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+
+main > #events > .events-container > .events-card > .event-description p {
+    font-size: 16px;
+    text-indent: 40px;
+    text-align: justify;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    background-color: rgba(249,249,249,255);
+    width: 100%;
+    height: 250px;
+    box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.5);
+    padding: 20px 50px;
+}
+
+footer > .upper {
+    display: flex;
+    height: 60%;
+    width: 100%;
+    padding: 5px 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom: 2px solid rgb(125, 123, 123);
+}
+
+footer > .upper div {
+    width: 100%;
+    height: 100%;
+    flex: 1 2 1;
+    padding: 10px;
+}
+
+footer > .upper > .upper-left-footer {
+    padding-left: 30px;
+}
+
+footer > .upper > .upper-left-footer a {
+    color: black;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    transition: text-decoration 0.6s ease;
+}
+
+footer > .upper > .upper-left-footer a:hover {
+    text-decoration: underline;
+}
+
+footer > .upper > .upper-left-footer h5{
+    font-size: 15px;
+    margin: 10px 0 2px 0;
+}
+
+footer > .upper > .upper-left-footer > p {
+    font-size: 15px;
+}
+
+footer > .upper > .upper-mid-footer {
+    padding: 10px 60px;
+}
+
+footer > .upper > .upper-right-footer {
+    display: flex;
+    justify-content: center;
+    align-items:self-start;
+}
+footer > .upper > .upper-right-footer a {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+    margin: 0 auto;
+    transition: background-color 0.5s ;
+}
+
+footer > .upper > .upper-right-footer a:hover {
+    background-color: rgb(155, 157, 173);
+    color: black;
+}
+
+footer > .lower {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: Quicksand;
 }
