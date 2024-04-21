@@ -134,7 +134,7 @@ main > #banner-container > .banner > .highlight-content > a:hover {
 
 main > #history {
     padding: 50px 0 0 0;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     scroll-behavior: smooth;
     /* background-color: rgb(243, 243, 243); */
     box-shadow: 0 0 10px #b6b4b4;
@@ -163,7 +163,6 @@ main > #history > .history-container > .off-list > li {
 
 main > #resorts {
     padding: 50px 90px;
-    scroll-behavior: smooth;
 }
 
 main > #resorts > .resort-container {
@@ -350,4 +349,49 @@ footer > .lower {
     display: flex;
     justify-content: center;
     font-family: Quicksand;
+}
+
+main > .parallax-bg {
+    width: 100%;
+    height: 500px;
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+/* 
+#parallax1,
+#parallax2, 
+#parallax3,
+#parallax4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+#parallax1 {
+    background: url("https://www.taclobanrentacar.com/wp-content/uploads/2022/11/Limasawa-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#parallax2 {
+    background: url("https://southernleyte.gov.ph/wp-content/uploads/2022/11/Lagoon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#parallax3 {
+    background: url("https://triptheislands.com/wp-content/uploads/2015/06/first-mass.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#parallax4 {
+    background: url("https://live.staticflickr.com/65535/52772376598_c2cb48e481_b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
