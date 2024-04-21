@@ -90,11 +90,13 @@ body {
 
 .form-container > div > form > #submit,
 .form-container > div > form > #reset {
+    padding-right: 11px;
     width: 48%;
     border: none;
     font-family: Quicksand;
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
 }
 
 .form-container > div > form > #submit:hover,
