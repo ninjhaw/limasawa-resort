@@ -136,8 +136,9 @@ main > #history {
     padding: 50px 0 0 0;
     /* margin-bottom: 100px; */
     scroll-behavior: smooth;
-    /* background-color: rgb(243, 243, 243); */
     box-shadow: 0 0 10px #b6b4b4;
+    background-color: rgba(246,245,240,255);
+    color: rgba(15,21,53,255);
 }
 
 main > #history > .history-container {
@@ -149,11 +150,12 @@ main > #history > .history-container {
 main > #history > .history-container > .info > p {
     text-align: justify;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 main > #history > .history-container > .off-list {
     padding-left: 50px;
+    list-style-type: circle;
 }
 
 main > #history > .history-container > .off-list > li {
@@ -163,6 +165,8 @@ main > #history > .history-container > .off-list > li {
 
 main > #resorts {
     padding: 50px 90px;
+    background-color: rgba(246,245,240,255);
+    color: rgba(15,21,53,255);
 }
 
 main > #resorts > .resort-container {
@@ -194,6 +198,8 @@ main > #resorts > .resort-container > .resort-card > p {
 }
 
 main > #tourist {
+    background-color: rgba(246,245,240,255);
+    color: rgba(15,21,53,255);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -239,8 +245,9 @@ main > #tourist > .spots-card > .spot-description > p {
 }
 
 main > #events {
+    background-color: rgba(246,245,240,255);
+    color: rgba(15,21,53,255);
     padding: 50px 90px;
-    margin-bottom: 60px;
 }
 
 main > #events > .events-container {
@@ -272,7 +279,8 @@ main > #events > .events-container > .events-card > .event-description p {
 }
 
 footer {
-    background-color: rgba(249,249,249,255);
+    background-color: rgba(226,246,252,255);
+    color: rgba(2,13,26,255);
     width: 100%;
     height: 250px;
     box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.5);
@@ -301,7 +309,7 @@ footer > .upper > .upper-left-footer {
 
 footer > .upper > .upper-left-footer a {
     color: black;
-    font-size: 20px;
+    font-size: 17px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     transition: text-decoration 0.6s ease;
@@ -353,7 +361,8 @@ footer > .lower {
 
 main > .parallax-bg {
     width: 100%;
-    height: 500px;
+    height: 400px;
+    background-color: black;
     /* background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; */
@@ -369,28 +378,28 @@ main > .parallax-bg {
 } */
 
 #parallax1 {
-    background: url("https://www.taclobanrentacar.com/wp-content/uploads/2022/11/Limasawa-1.jpg");
+    background: url("https://scontent.fceb8-1.fna.fbcdn.net/v/t39.30808-6/422349338_373502192093645_2570859348172214492_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHj-ZUI-B9M2dfl1aKYG9XnnMnNIFiQECScyc0gWJAQJMb-Tuanm20o8jTMZ_HDNU5_trm-7gQIZEoCcDOatJ-k&_nc_ohc=Y49dO0uJbxYAb4B2O-0&_nc_zt=23&_nc_ht=scontent.fceb8-1.fna&oh=00_AfCYzUN_vLpgq7n0ZRxnjravcNFvXPyc8DPMP_DVB4ZMSA&oe=662A868B");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 #parallax2 {
-    background: url("https://southernleyte.gov.ph/wp-content/uploads/2022/11/Lagoon.jpg");
+    background: url("https://scontent.fceb8-1.fna.fbcdn.net/v/t39.30808-6/354210544_777313863838873_6054385951698939548_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEjBTD42sKAET1QjdCUNnWydvVOCZoMEpJ29U4JmgwSkppZaEEvsP-QdHqSOb460_OgYjF5h6CaCp5ez_QKJgbF&_nc_ohc=71Fdb1cUg6AAb5-rQZY&_nc_zt=23&_nc_ht=scontent.fceb8-1.fna&oh=00_AfCHeOzasf7ukPt8UVQQfUjqXotduVSOIkIufOh9xvhtMw&oe=662A8575");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 #parallax3 {
-    background: url("https://triptheislands.com/wp-content/uploads/2015/06/first-mass.jpg");
+    background: url("https://scontent.fceb8-1.fna.fbcdn.net/v/t39.30808-6/435080481_3628373170752405_3215145652749512452_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF977D-0DW1l5itEagNKKZyWf6acVzxQ2lZ_ppxXPFDaf1BB2IXHYOThYzltpBdr910VZP5oRXSP2fwQPvPDZhM&_nc_ohc=OWB6WsDEazkAb49dxM1&_nc_zt=23&_nc_ht=scontent.fceb8-1.fna&oh=00_AfDJvrGfqN6UtFqiWXHtj4rfEWMQvDemUx8A_o2bTkEcdQ&oe=662A69DE");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 #parallax4 {
-    background: url("https://live.staticflickr.com/65535/52772376598_c2cb48e481_b.jpg");
+    background: url("https://scontent.fceb8-1.fna.fbcdn.net/v/t39.30808-6/435250914_3628374214085634_6342884711237074091_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGa1WwfUigRn6XxspgUevWcM4uA8Wc0uFAzi4DxZzS4UKVoBFe8Lu8D95mZLOG5jqFi6XEZxncaJ0_8a9q6i7o8&_nc_ohc=Z4QBp9akNbYAb5Z1i3V&_nc_zt=23&_nc_ht=scontent.fceb8-1.fna&oh=00_AfCSF_dvaQOWY91bYO8NjbZpceMWCpGGajAd-g6lpB_yTg&oe=662A7EC8");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
