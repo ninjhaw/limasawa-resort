@@ -171,7 +171,7 @@ main > #history > .history-container > .off-list > li {
 }
 
 main > #resorts {
-    padding: 50px 80px;
+    padding: 70px 80px;
     background-color: rgba(246,245,240,255);
     color: rgba(15,21,53,255);
 }
@@ -184,18 +184,23 @@ main > #resorts > .resort-container {
 }
 
 main > #resorts > .resort-container > .resort-card {
+    padding: 0 0 12px 0;
    text-align: center;
+   box-shadow: 0 15px 16px 0 rgba(0,0,0,0.2), 0 9px 20px 0 rgba(0,0,0,0.19) !important;
 }
 
 main > #resorts > .resort-container > .resort-card > h3 {
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 30px;
+    margin-bottom: 3px;
+
 }
 
 main > #resorts > .resort-container > .resort-card > p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
+    margin-bottom: 5px;
 }
 
 main > #tourist {
@@ -204,7 +209,7 @@ main > #tourist {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 50px 90px;
+    padding: 80px 90px;
     gap: 20px;
     flex-wrap: wrap;
     box-shadow: 0 0 10px #b1b0b0;
@@ -248,7 +253,7 @@ main > #tourist > .spots-card > .spot-description > p {
 main > #events {
     background-color: rgba(246,245,240,255);
     color: rgba(15,21,53,255);
-    padding: 50px 90px;
+    padding: 80px 90px;
 }
 
 main > #events > .events-container {
