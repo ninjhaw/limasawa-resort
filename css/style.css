@@ -74,6 +74,13 @@ header > nav > ul > li > a:hover {
     color: brown;
 }
 
+header > .menus {
+    padding-top: 17px;
+    display: none;
+}
+
+
+
 /* MAIN */
 
 main > #banner-container {
@@ -172,6 +179,7 @@ main > #resorts {
 main > #resorts > .resort-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
     align-items: center;
 }
@@ -407,4 +415,18 @@ main > .parallax-bg {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+@media (max-width: 880px) {
+    header > nav > ul > li > a {
+        display: none;
+    }
+
+    header > .menus {
+        display: block;
+    }
+
+    header > .menus > i {
+        cursor: pointer;
+    }
 }
