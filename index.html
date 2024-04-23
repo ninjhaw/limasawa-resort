@@ -291,5 +291,23 @@
             </section>
         </footer>
     </div>
+    <script type="text/javascript">
+       // Get all the anchor tags inside the navbar
+        const navbarLinks = document.querySelectorAll('nav ul li a');
+
+        // Add click event listener to each anchor tag
+        navbarLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Remove 'active' class from all anchor tags
+                navbarLinks.forEach(link => link.classList.remove('active'));
+                
+                // Add 'active' class to the clicked anchor tag
+                link.classList.add('active');
+            });
+        });
+
+    </script>
+   
 </body>
+
 </html>

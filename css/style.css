@@ -16,6 +16,9 @@ h2 {
     text-transform: uppercase;
 }
 
+.active {
+    color: brown;
+}
 
 div.container {
     max-width: 100%;
