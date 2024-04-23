@@ -375,8 +375,8 @@ main > .parallax-bg {
     height: 400px;
     background-color: black;
     box-shadow: -10px -2px 25px 6px rgba(116,145,112,0.86) inset;
--webkit-box-shadow: -10px -2px 25px 6px rgba(116,145,112,0.86) inset;
--moz-box-shadow: -10px -2px 25px 6px rgba(116,145,112,0.86) inset;
+    -webkit-box-shadow: -10px -2px 25px 6px rgba(116,145,112,0.86) inset;
+    -moz-box-shadow: -10px -2px 25px 6px rgba(116,145,112,0.86) inset;
     /* background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; */
