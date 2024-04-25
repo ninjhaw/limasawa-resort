@@ -419,12 +419,76 @@ main > .parallax-bg {
     background-attachment: fixed;
 }
 
-@media (max-width: 880px) {
-    main > #banner-container > .banner > .highlight-content > h1 {
-        font-size: 2.8rem;
+@media (max-width: 1010px ) {
+    main > #tourist {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    header > nav > ul > li > a {
+    main > #tourist > .spots-card:nth-child(odd) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > #tourist > .spots-card:nth-child(even) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > #tourist > .spots-card > .spot-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > #events {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > #events > .events-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > #events > .events-container > .events-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer {
+        height: 100%;
+    }
+    
+    footer > .upper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > .upper > .upper-left-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > .upper > .upper-mid-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 938px){
+    header > nav > ul > li > a{
         display: none;
     }
 
@@ -432,7 +496,32 @@ main > .parallax-bg {
         display: block;
     }
 
-    header > .menus > i {
-        cursor: pointer;
+    main > #banner-container  > .banner > .highlight-content > h1 {
+        font-size: 3.5rem ;
     }
+}
+
+@media (max-width: 803px){
+    main > #banner-container > .banner > .highlight-content > h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 698px){
+    main > #banner-container > .banner >.highlight-content > h1 {
+        font-size: 2.8rem;
+    }
+
+    main > #history {
+        padding: 20px 10px;
+    }
+
+    main > #history > .history-container {
+        padding: 10px 30px;
+    }
+
+    main > #tourist {
+        padding: 10px 20px;
+    }
+
 }
